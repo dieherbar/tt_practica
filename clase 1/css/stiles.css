@@ -1,0 +1,21 @@
+header{
+    background-color: aqua;
+}
+nav{
+    background-color: violet;
+}
+main{
+    background-color: orange;
+}
+article{
+    background-color: rgba(255, 115, 0, 0.685);
+}
+section{
+    background-color: yellowgreen;
+}
+aside{
+    background-color: greenyellow;
+}
+footer{
+    background-color: aliceblue;
+}
