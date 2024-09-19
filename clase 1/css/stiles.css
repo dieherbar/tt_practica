@@ -1,21 +1,38 @@
-header{
+header {
     background-color: aqua;
+    padding: 0.5em;
 }
-nav{
+
+nav {
     background-color: violet;
 }
-main{
+
+main {
     background-color: orange;
 }
-article{
+
+article {
     background-color: rgba(255, 115, 0, 0.685);
 }
-section{
+
+section {
     background-color: yellowgreen;
 }
-aside{
+
+aside {
     background-color: greenyellow;
 }
-footer{
+
+footer {
     background-color: aliceblue;
+}
+
+img {/*degradado en imagenes*/
+    mask-image: linear-gradient(black 80%,
+            transparent);
+}
+img2{/*esto evita saltos en el sitio cuando cargan imagenes o videos en una pagina*/
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
 }
