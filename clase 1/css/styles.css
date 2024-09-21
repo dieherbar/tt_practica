@@ -1,10 +1,18 @@
+body{
+    margin: 1rem;
+    padding-left: 1em;
+}
 header {
-    background-color: aqua;
+    background-color: #f7f7f7;
     padding: 0.5em;
 }
 
 nav {
     background-color: violet;
+}
+h1{
+    color: #615f5f;
+    display: inline;
 }
 
 main {
@@ -28,6 +36,8 @@ footer {
 }
 
 img {/*degradado en imagenes*/
+    height: 25%;
+    width: 25%;
     mask-image: linear-gradient(black 80%,
             transparent);
 }
@@ -35,4 +45,19 @@ img2{/*esto evita saltos en el sitio cuando cargan imagenes o videos en una pagi
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
+}
+table{
+    border: 3px solid green;
+}
+.celdas {
+    border: 2px solid rebeccapurple;
+}
+.logo{
+    height: auto;
+    width: auto;
+}
+#navegacion{
+    list-style: none;
+    text-decoration: none;
+    color: chartreuse;
 }
