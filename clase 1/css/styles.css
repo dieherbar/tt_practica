@@ -3,20 +3,20 @@ body{
     padding-left: 1em;
 }
 header {
-    background-color: #f7f7f7;
+    background-color: #6C698D;
     padding: 0.5em;
 }
 
 nav {
-    background-color: violet;
+    background-color: #D4D2D5;
 }
 h1{
-    color: #615f5f;
+    color: #f7f7f7;
     display: inline;
 }
 
 main {
-    background-color: orange;
+    background-color: #BFAFA6;
 }
 
 article {
@@ -24,7 +24,7 @@ article {
 }
 
 section {
-    background-color: yellowgreen;
+    background-color: #AA968A;
 }
 
 aside {
@@ -32,7 +32,8 @@ aside {
 }
 
 footer {
-    background-color: aliceblue;
+    background-color: #6E6A6F;
+    color: #f7f7f7;
 }
 
 img {/*degradado en imagenes*/
@@ -59,5 +60,5 @@ table{
 #navegacion{
     list-style: none;
     text-decoration: none;
-    color: chartreuse;
+    color: #615f5f;
 }
