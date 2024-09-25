@@ -1,7 +1,8 @@
-body{
+body {
     margin: 1rem;
     padding-left: 1em;
 }
+
 header {
     background-color: #6C698D;
     padding: 0.5em;
@@ -10,7 +11,8 @@ header {
 nav {
     background-color: #D4D2D5;
 }
-h1{
+
+h1 {
     color: #f7f7f7;
     display: inline;
 }
@@ -36,29 +38,42 @@ footer {
     color: #f7f7f7;
 }
 
-img {/*degradado en imagenes*/
+img {
+    /*degradado en imagenes*/
     height: 25%;
     width: 25%;
     mask-image: linear-gradient(black 80%,
             transparent);
 }
-img2{/*esto evita saltos en el sitio cuando cargan imagenes o videos en una pagina*/
+
+img2 {
+    /*esto evita saltos en el sitio cuando cargan imagenes o videos en una pagina*/
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
 }
-table{
+
+table {
     border: 3px solid green;
 }
+
 .celdas {
     border: 2px solid rebeccapurple;
 }
-.logo{
+
+.logo {
     height: auto;
     width: auto;
 }
-#navegacion{
+
+#navegacion {
     list-style: none;
     text-decoration: none;
     color: #615f5f;
+}
+
+.princess-sofia-regular {
+    font-family: "Princess Sofia", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
