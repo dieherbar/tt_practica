@@ -83,3 +83,7 @@ table {
     font-weight: 400;
     font-style: normal;
 }
+
+.responsiveText{
+    font-size: clamp(1rem, 2vw + 1rem, 3rem);
+}
