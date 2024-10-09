@@ -92,10 +92,19 @@ table {
 }
 
 .navegacion {
-    list-style: none;
-    text-decoration: none;
-/*    color: #615f5f;*/
-color: #f7f7f7;
+        /*list-style-type: none;*/
+        margin:0%;  
+        padding: 0;
+        list-style: none;
+        li{
+            display: inline;
+        }
+    
+    li a{
+        text-decoration: none;
+        /*    color: #615f5f;*/
+        color: #f7f7f7;
+    }
 }
 
 .princess-sofia-regular {
@@ -111,17 +120,28 @@ color: #f7f7f7;
     font-weight: 600;
     letter-spacing: 0.1rem;
 }
-.container{
+.container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
-.item{
+    height: 10rem;
+    background-color: #eaeaea;
+    margin: 0.5rem;
+    width: 100vw;
+    box-sizing: border-box;
+    max-width: 100%;
+    }
+    .item {
+    background-color: #4caf50;
+    color: white;
     padding: 1rem;
-}
+    margin: 1px;
+    }
 
 .clase05{
-    background-color: #7369da;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,0.21) 0%, rgba(9,9,121,0.652) 50%, rgba(0,212,255,1) 100%);
     h2{
         font-size: 2.5rem;
         font-weight: 700;
