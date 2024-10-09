@@ -67,20 +67,7 @@ img{
             transparent);
 }
 
-img2 {
-    /*esto evita saltos en el sitio cuando cargan imagenes o videos en una pagina*/
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16/9;
-}
 
-table {
-    border: 3px solid green;
-}
-
-.celdas {
-    border: 2px solid rebeccapurple;
-}
 
 .logo {
     height: auto;
@@ -94,15 +81,7 @@ table {
 color: #f7f7f7;
 }
 
-.princess-sofia-regular {
-    font-family: "Princess Sofia", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
 
-.responsiveText{
-    font-size: clamp(1rem, 2vw + 1rem, 3rem);
-}
 .negrita{
     font-weight: 600;
     letter-spacing: 0.1rem;
