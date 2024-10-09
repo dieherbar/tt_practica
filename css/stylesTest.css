@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+*{
+    margin: 0rem;
+    padding: 0rem;
+    font-family: "Oswald", system-ui;
+    
+}
+:root{
+    font-size: 16px;
+}
+/*body {
+    margin: 1rem;
+    padding-left: 1em;
+}*/
+
+header, footer {
+    background-color: #6C698D;
+    padding: 0.5em;
+    color: #f7f7f7;
+}
+.hero{
+   background-image: url("/assets/img/4vestidos.jpg");
+   background-blend-mode: lighten;
+   height: 500px;
+}
+nav {
+    /*background-color: #D4D2D5;*/
+    color: #f7f7f7;
+}
+
+h1 {
+    color: #f7f7f7;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    display: inline;
+}
+
+main {
+    background-color: #BFAFA6;
+}
+
+article {
+    background-color: #ff7300af;
+}
+
+section {
+/*    background-color: #AA968A;*/
+    background-color: #BFAFA6;
+}
+
+aside {
+    background-color: greenyellow;
+}
+
+/*footer {
+    background-color: #6E6A6F;
+    color: #f7f7f7;
+}*/
+
+.rezise {
+    /*degradado en imagenes*/
+    height: 25%;
+    width: 25%;
+}
+img{
+    mask-image: linear-gradient(black 80%,
+            transparent);
+}
+.luna{
+    height: auto;
+    width: 50vw;
+}
+
+img2 {
+    /*esto evita saltos en el sitio cuando cargan imagenes o videos en una pagina*/
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+table {
+    border: 3px solid green;
+}
+
+.celdas {
+    border: 2px solid rebeccapurple;
+}
+
+.logo {
+    height: auto;
+    width: auto;
+}
+
+.navegacion {
+    list-style: none;
+    text-decoration: none;
+/*    color: #615f5f;*/
+color: #f7f7f7;
+}
+
+.princess-sofia-regular {
+    font-family: "Princess Sofia", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.responsiveText{
+    font-size: clamp(1rem, 2vw + 1rem, 3rem);
+}
+.negrita{
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item{
+    padding: 1rem;
+}
+
+.clase05{
+    background-color: #7369da;
+    h2{
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-transform: uppercase; 
+    }
+    p{
+        font-family: "Princess Sofia", cursive;
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+}
