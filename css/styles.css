@@ -1,23 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+*{
+    margin: 0rem;
+    padding: 0rem;
+    font-family: "Oswald", system-ui;
+    
+}
 :root{
     font-size: 16px;
 }
-body {
-
+/*body {
     margin: 1rem;
     padding-left: 1em;
-}
+}*/
 
-header {
+header, footer {
     background-color: #6C698D;
     padding: 0.5em;
+    color: #f7f7f7;
 }
-
+.hero{
+   background-image: url("/assets/img/4vestidos.jpg");
+   background-blend-mode: lighten;
+   height: 500px;
+}
 nav {
-    background-color: #D4D2D5;
+    /*background-color: #D4D2D5;*/
+    color: #f7f7f7;
 }
 
 h1 {
     color: #f7f7f7;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
     display: inline;
 }
 
@@ -26,21 +40,22 @@ main {
 }
 
 article {
-    background-color: rgba(255, 115, 0, 0.685);
+    background-color: #ff7300af;
 }
 
 section {
-    background-color: #AA968A;
+/*    background-color: #AA968A;*/
+    background-color: #BFAFA6;
 }
 
 aside {
     background-color: greenyellow;
 }
 
-footer {
+/*footer {
     background-color: #6E6A6F;
     color: #f7f7f7;
-}
+}*/
 
 .rezise {
     /*degradado en imagenes*/
@@ -75,7 +90,8 @@ table {
 .navegacion {
     list-style: none;
     text-decoration: none;
-    color: #615f5f;
+/*    color: #615f5f;*/
+color: #f7f7f7;
 }
 
 .princess-sofia-regular {
@@ -86,4 +102,16 @@ table {
 
 .responsiveText{
     font-size: clamp(1rem, 2vw + 1rem, 3rem);
+}
+.negrita{
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item{
+    padding: 1rem;
 }
