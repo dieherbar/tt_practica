@@ -1,28 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
-*{
-    margin: 0rem;
-    padding: 0rem;
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: "Oswald", system-ui;
-    
+
 }
-:root{
+
+/*:root {
     font-size: 16px;
-}
-/*body {
-    margin: 1rem;
-    padding-left: 1em;
 }*/
 
-header, footer {
-    background-color: #6C698D;
-    padding: 0.5em;
+
+.dottedFont {
+    font-family: "Edu AU VIC WA NT Dots", cursive;
+    font-size: 3rem;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
     color: #f7f7f7;
 }
-.hero{
-   background-image: url("/assets/img/4vestidos.jpg");
-   background-blend-mode: lighten;
-   height: 500px;
+
+header,
+footer {
+    background-color: #6E6A6F;
+    padding: 0.1em;
+    color: #f7f7f7;
 }
+
+.hero {
+    h1 {
+        font-size: 4rem;
+        color: #f7f7f7;
+        font-weight: 700;
+        letter-spacing: 0.3rem;
+        display: inline;
+    }
+
+    background-image: url("../assets/img/fondoHero.jpg");
+    height: 80vh;
+    background-size: cover;
+}
+
 nav {
     /*background-color: #D4D2D5;*/
     color: #f7f7f7;
@@ -39,17 +60,9 @@ main {
     background-color: #BFAFA6;
 }
 
-article {
-    background-color: #ff7300af;
-}
-
 section {
-/*    background-color: #AA968A;*/
+    /*    background-color: #AA968A;*/
     background-color: #BFAFA6;
-}
-
-aside {
-    background-color: greenyellow;
 }
 
 /*footer {
@@ -57,12 +70,7 @@ aside {
     color: #f7f7f7;
 }*/
 
-.rezise {
-    /*degradado en imagenes*/
-    height: 25%;
-    width: 25%;
-}
-img{
+img {
     mask-image: linear-gradient(black 80%,
             transparent);
 }
@@ -76,21 +84,47 @@ img{
 
 .navegacion {
     list-style: none;
-    text-decoration: none;
-/*    color: #615f5f;*/
-color: #f7f7f7;
+
+    li {
+        display: inline;
+        padding: 1rem;
+        font-size: 1.3rem;
+    }
+
+    /*color: #f7f7f7;*/
+    a {
+        text-decoration: none;
+        color: #f7f7f7;
+    }
+
+    /*    color: #615f5f;*/
+
+}
+.imgResize{
+    width: 30vw;
 }
 
-
-.negrita{
+.negrita {
     font-weight: 600;
     letter-spacing: 0.1rem;
 }
-.container{
+
+.container {
     display: flex;
+    max-width: 100%;
+    margin: 0%;
+    padding: 0%;
     justify-content: space-between;
     align-items: center;
 }
-.item{
-    padding: 1rem;
+
+.item {
+    padding: 0%;
+}
+
+.backgroundGradient {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+.alignRight{
+    text-align: right;
 }
