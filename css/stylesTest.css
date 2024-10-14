@@ -1,28 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
-*{
+
+* {
     margin: 0rem;
     padding: 0rem;
     font-family: "Oswald", system-ui;
-    
+
 }
-:root{
+
+:root {
     font-size: 16px;
 }
+
 /*body {
     margin: 1rem;
     padding-left: 1em;
 }*/
 
-header, footer {
+header,
+footer {
     background-color: #6C698D;
     padding: 0.5em;
     color: #f7f7f7;
 }
-.hero{
-   background-image: url("/assets/img/4vestidos.jpg");
-   background-blend-mode: lighten;
-   height: 500px;
+
+.hero {
+    background-image: url("/assets/img/4vestidos.jpg");
+    background-blend-mode: lighten;
+    height: 500px;
 }
+
 nav {
     /*background-color: #D4D2D5;*/
     color: #f7f7f7;
@@ -44,7 +50,7 @@ article {
 }
 
 section {
-/*    background-color: #AA968A;*/
+    /*    background-color: #AA968A;*/
     background-color: #BFAFA6;
 }
 
@@ -62,11 +68,13 @@ aside {
     height: 25%;
     width: 25%;
 }
-img{
+
+img {
     mask-image: linear-gradient(black 80%,
             transparent);
 }
-.luna{
+
+.luna {
     height: auto;
     width: 50vw;
 }
@@ -92,15 +100,16 @@ table {
 }
 
 .navegacion {
-        /*list-style-type: none;*/
-        margin:0%;  
-        padding: 0;
-        list-style: none;
-        li{
-            display: inline;
-        }
-    
-    li a{
+    /*list-style-type: none;*/
+    margin: 0%;
+    padding: 0;
+    list-style: none;
+
+    li {
+        display: inline;
+    }
+
+    li a {
         text-decoration: none;
         /*    color: #615f5f;*/
         color: #f7f7f7;
@@ -113,13 +122,15 @@ table {
     font-style: normal;
 }
 
-.responsiveText{
+.responsiveText {
     font-size: clamp(1rem, 2vw + 1rem, 3rem);
 }
-.negrita{
+
+.negrita {
     font-weight: 600;
     letter-spacing: 0.1rem;
 }
+
 .container {
     display: flex;
     flex-direction: row;
@@ -131,25 +142,78 @@ table {
     width: 100vw;
     box-sizing: border-box;
     max-width: 100%;
-    }
-    .item {
-    background-color: #4caf50;
+}
+
+.item {
+    background-color: #4a944c;
     color: white;
     padding: 1rem;
     margin: 1px;
-    }
+}
 
-.clase05{
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,0.21) 0%, rgba(9,9,121,0.652) 50%, rgba(0,212,255,1) 100%);
-    h2{
+.clase05 {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.21) 0%, rgba(9, 9, 121, 0.652) 50%, rgba(0, 212, 255, 1) 100%);
+
+    h2 {
         font-size: 2.5rem;
         font-weight: 700;
-        text-transform: uppercase; 
+        text-transform: uppercase;
     }
-    p{
+
+    p {
         font-family: "Princess Sofia", cursive;
         font-size: 2rem;
         padding: 0.5rem;
     }
 }
+
+.box {
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+    border: 2px solid #333;
+    margin: 20px;
+}
+
+.relative-box {
+    position: relative;
+    left: 30px;
+    top: 20px;
+    background-color: #f0f0f0;
+    width: 200px;
+    height: 100px;
+}
+
+.absolute-box {
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    background-color: #ccc;
+    width: 150px;
+    height: 150px;
+}
+.spacer{
+    height: 3rem;
+}
+/* clase 06 selectores avanzados*/
+div p {
+    color: #E5E5E5;
+    /*background-color: #6C698D;*/
+}
+
+div > p {
+    color: #6cf16c;
+    background-color: #908b87;
+}
+h4 + p {
+    font-size: 1.5em;
+    }
+    .producto {
+        background-color: #2196F3; /* Fondo azul */
+        color: white; /* Color del texto */
+        padding: 20px; /* Relleno interno de cada producto */
+        margin: 10px; /* Margen externo de cada producto */
+        flex: 1 1 200px; /* Ajuste flexible: crece, encoge, tamaño base 200px */
+        box-sizing: border-box; /* Incluir relleno y borde en el tamaño total */
+        }
