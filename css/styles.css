@@ -16,11 +16,11 @@
 
 .dottedFont {
     font-family: "Edu AU VIC WA NT Dots", cursive;
-    font-size: 3rem;
-    font-optical-sizing: auto;
-    font-weight: 500;
+    /*    font-size: 3rem;
     font-style: normal;
+    font-weight: 500;*/
     color: #f7f7f7;
+    font-optical-sizing: auto;
 }
 
 header,
@@ -73,6 +73,7 @@ section {
 img {
     mask-image: linear-gradient(black 80%,
             transparent);
+
 }
 
 
@@ -100,7 +101,8 @@ img {
     /*    color: #615f5f;*/
 
 }
-.imgResize{
+
+.imgResize {
     width: 30vw;
 }
 
@@ -125,6 +127,56 @@ img {
 .backgroundGradient {
     background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 }
-.alignRight{
+
+.alignRight {
     text-align: right;
+}
+
+.hero-section {
+    background-image: url("../assets/img/4vestidos.jpg");
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+
+    div {
+        /*backdrop-filter: invert(80%);*/
+        backdrop-filter: sepia(90%);
+        /*backdrop-filter: blur(10px);*/
+        padding: 20px 0;
+    }
+
+    text-align: center;
+
+    h1 {
+        font-size: 5rem;
+        font-weight: 700;
+        letter-spacing: 1em;
+    }
+
+    h1+h2 {
+        font-size: 3rem;
+        color: #1e1f1d;
+        font-weight: 700;
+        letter-spacing: 7px;
+
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 2em;
+        color: #f7f7f7;
+        background-color: #3b493ac3;
+        border: 2px solid black;
+        padding: 7px;
+        border-radius: 7px;
+        box-shadow: 10px 14px 4px -1px rgba(14, 14, 14, 0.7);
+    }
+    /*
+    4 vestidos palette
+#806A61
+#1C2623
+#DDDFCD
+#CDA598
+#B8B7BE
+    */
 }
