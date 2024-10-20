@@ -39,6 +39,9 @@ footer {
         display: inline;
     }
 
+}
+
+.hero-image-index {
     background-image: url("../assets/img/fondoHero.jpg");
     height: 80vh;
     background-size: cover;
@@ -49,12 +52,12 @@ nav {
     color: #f7f7f7;
 }
 
-h1 {
+/*h1 {
     color: #f7f7f7;
     font-weight: 700;
     letter-spacing: 0.3rem;
     display: inline;
-}
+}*/
 
 main {
     background-color: #BFAFA6;
@@ -63,12 +66,17 @@ main {
 section {
     /*    background-color: #AA968A;*/
     background-color: #BFAFA6;
-}
 
-/*footer {
-    background-color: #6E6A6F;
-    color: #f7f7f7;
-}*/
+    h3 {
+        text-align: justify;
+        padding: 1rem;
+    }
+
+    p {
+        text-align: justify;
+        padding: 1rem;
+    }
+}
 
 img {
     mask-image: linear-gradient(black 80%,
@@ -76,11 +84,9 @@ img {
 
 }
 
-
-
 .logo {
-    height: auto;
-    width: auto;
+    height: 5rem;
+    width: 5rem;
 }
 
 .navegacion {
@@ -132,46 +138,92 @@ img {
     text-align: right;
 }
 
-.hero-section {
+.gallery-hero {
     background-image: url("../assets/img/4vestidos.jpg");
     height: 80vh;
     background-size: cover;
     background-position: center;
+}
+
+/*
+h1 {
+        font-size: 4rem;
+        color: #f7f7f7;
+        font-weight: 700;
+        letter-spacing: 0.3rem;
+        display: inline;
+    }
+*/
+.text-center {
+    text-align: center;
+}
+
+.hero-section {
+
 
     div {
         /*backdrop-filter: invert(80%);*/
-        backdrop-filter: sepia(90%);
-        /*backdrop-filter: blur(10px);*/
+        /*backdrop-filter: sepia(90%);*/
+        backdrop-filter: blur(5px);
         padding: 20px 0;
     }
 
     text-align: center;
 
     h1 {
+        color: #f7f7f7;
         font-size: 5rem;
         font-weight: 700;
-        letter-spacing: 1em;
+        letter-spacing: 0.3em;
     }
 
     h1+h2 {
-        font-size: 3rem;
-        color: #1e1f1d;
+        font-size: 2.5rem;
+        /*        color: #1e1f1d;*/
         font-weight: 700;
-        letter-spacing: 7px;
-
+        letter-spacing: 0.2em;
+        margin-bottom: 0.6em;
     }
+}
 
-    a {
-        text-decoration: none;
-        font-size: 2em;
-        color: #f7f7f7;
-        background-color: #3b493ac3;
-        border: 2px solid black;
-        padding: 7px;
-        border-radius: 7px;
-        box-shadow: 10px 14px 4px -1px rgba(14, 14, 14, 0.7);
+.link-button {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #f7f7f7;
+    background-color: #909890e0;
+    border: 2px solid black;
+    /*margin: 0.5em;*/
+    padding: 7px;
+    border-radius: 7px;
+    box-shadow: 10px 14px 4px -1px rgba(14, 14, 14, 0.7);
+}
+a:hover{
+    color: #B8B7BE;
+}
+
+.carousel {
+    display: flex;
+    width: 600px;
+    height: 430px;
+    margin: auto;
+
+    img {
+        width: 0;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        transition: .5s ease;
     }
-    /*
+}
+
+.carousel img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/*
     4 vestidos palette
 #806A61
 #1C2623
@@ -179,4 +231,3 @@ img {
 #CDA598
 #B8B7BE
     */
-}
