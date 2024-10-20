@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
 * {
-    margin: 0rem;
-    padding: 0rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 999;
     font-family: "Oswald", system-ui;
 
 }
@@ -18,8 +20,8 @@
 
 header,
 footer {
-    background-color: #6C698D;
-    padding: 0.5em;
+    background-color: #6c698d;
+    /*padding: 0.5em;*/
     color: #f7f7f7;
 }
 
@@ -101,7 +103,7 @@ table {
 
 .navegacion {
     /*list-style-type: none;*/
-    margin: 0%;
+    margin: 0;
     padding: 0;
     list-style: none;
 
@@ -137,8 +139,8 @@ table {
     justify-content: space-between;
     align-items: center;
     height: 10rem;
-    background-color: #eaeaea;
-    margin: 0.5rem;
+    background-color: #eaeaeab3;
+    /*margin: 0.5rem;*/
     width: 100vw;
     box-sizing: border-box;
     max-width: 100%;
@@ -193,27 +195,102 @@ table {
     width: 150px;
     height: 150px;
 }
-.spacer{
+
+.spacer {
     height: 3rem;
 }
+
 /* clase 06 selectores avanzados*/
 div p {
     color: #E5E5E5;
     /*background-color: #6C698D;*/
 }
 
-div > p {
+div>p {
     color: #6cf16c;
     background-color: #908b87;
 }
-h4 + p {
+
+h4+p {
     font-size: 1.5em;
-    }
-    .producto {
-        background-color: #2196F3; /* Fondo azul */
-        color: white; /* Color del texto */
-        padding: 20px; /* Relleno interno de cada producto */
-        margin: 10px; /* Margen externo de cada producto */
-        flex: 1 1 200px; /* Ajuste flexible: crece, encoge, tamaño base 200px */
-        box-sizing: border-box; /* Incluir relleno y borde en el tamaño total */
-        }
+}
+
+.producto {
+    background-color: #2196F3;
+    /* Fondo azul */
+    color: white;
+    /* Color del texto */
+    padding: 20px;
+    /* Relleno interno de cada producto */
+    margin: 10px;
+    /* Margen externo de cada producto */
+    flex: 1 1 200px;
+    /* Ajuste flexible: crece, encoge, tamaño base 200px */
+    box-sizing: border-box;
+    /* Incluir relleno y borde en el tamaño total */
+}
+
+/*clase 07 grid*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    /* Una columna de 200px y otra que ocupa el espacio restante */
+    grid-template-rows: auto 1fr auto;
+    /* Tres filas, la del medio es flexible */
+    gap: 10px;
+    /* Espacio entre los elementos */
+    border: 2px dotted red;
+    padding: 1rem;
+}
+
+.header {
+    grid-column: 1 / 4;
+    /* La cabecera ocupa las dos columnas */
+    border: 2px solid red;
+}
+
+.menu {
+    height: 200px;
+    grid-column: 1 / 2;
+    /* El menú ocupa la primera columna */
+    border: 2px solid red;
+    border-radius: 50%;
+}
+
+.main {
+    grid-column: 2 / 3;
+    /* El contenido principal ocupa la segunda columna */
+    border: 2px solid red;
+}
+
+.footer {
+    grid-column: 2 / 3;
+    /* El pie de página también ocupa las dos columnas */
+    border: 2px solid red;
+}
+
+.filter-blur{
+    /*backdrop-filter: invert(80%);*/
+    filter: blur(5px);
+}
+
+.filter-hue{
+    filter: hue-rotate(90deg);
+}
+
+.box-shadow{
+    box-shadow: 10px 14px 4px -1px rgba(14,14,14,0.7);
+-webkit-box-shadow: 10px 14px 4px -1px rgba(14,14,14,0.7);
+-moz-box-shadow: 10px 14px 4px -1px rgba(14,14,14,0.7);
+}
+
+.sticky{
+    position:sticky;
+    top: 0;
+}
+
+.hero-section{
+    background-image: url("../assets/img/4vestidos.jpg");
+    height: 80vh;
+    background-size: cover;
+}
