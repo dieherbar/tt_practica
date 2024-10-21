@@ -198,12 +198,12 @@ h1 {
     box-shadow: 10px 14px 4px -1px rgba(14, 14, 14, 0.7);
 }
 a:hover{
-    color: #B8B7BE;
+    color: #cbcbd9;
 }
 
 .carousel {
     display: flex;
-    width: 600px;
+    width: 75%;
     height: 430px;
     margin: auto;
 
@@ -221,6 +221,19 @@ a:hover{
     width: 300px;
     opacity: 1;
     filter: contrast(120%);
+}
+
+
+.spacer{
+    height: 1.5rem;
+    width: 100%;
+}
+.colectionBtn{
+    margin: auto;
+    /*margin-bottom: 2rem;*/
+    text-align: center;
+    display: block;
+    width: 25%;
 }
 
 /*
