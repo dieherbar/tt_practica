@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap');
 
 * {
-    margin: 0;
+    margin: 0 1rem;
     padding: 0;
     box-sizing: border-box;
     font-family: "Oswald", system-ui;
@@ -41,7 +41,7 @@ footer {
 
 }
 
-.hero-image-index {
+.heroImageIndex {
     background-image: url("../assets/img/fondoHero.jpg");
     height: 80vh;
     background-size: cover;
@@ -138,7 +138,7 @@ img {
     text-align: right;
 }
 
-.gallery-hero {
+.galleryHero {
     background-image: url("../assets/img/4vestidos.jpg");
     height: 80vh;
     background-size: cover;
@@ -154,11 +154,11 @@ h1 {
         display: inline;
     }
 */
-.text-center {
+.textCenter {
     text-align: center;
 }
 
-.hero-section {
+.heroSection {
 
 
     div {
@@ -186,7 +186,7 @@ h1 {
     }
 }
 
-.link-button {
+.linkButton {
     text-decoration: none;
     font-size: 1.5em;
     color: #f7f7f7;
