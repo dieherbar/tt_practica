@@ -6,48 +6,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/3743f8a5cd.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Proyecto 1</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Kamba Indumentaria</title>
 </head>
 
 <body>
-    <!-- alt + z convierte el contenido en VSC en multilinea, si escribimos Lorem100 se escribirá un
-texto de ejemplo de 100 palabras. Y escribiendo
-p*3 se crearán 3 etiquetas <p>.-->
-
     <header>
-        <img class="logo" src="./assets/img/logo.png" alt="logo de zorro">
-        <h1>Welcome to my project page</h1>
+        <div class="container">
+            <a href="index.html">
+                <img class="logo" src="./assets/img/logoKambaEd.jpg" alt="logo de zorro">
+            </a>
+            <div class="item">
+                <nav>
+                    <ul class="navegacion">
+                        <li><a class="navegacion" href="/pages/galeria.html">Galeria</a></li>
+                        <li><a class="navegacion" href="./index.html">Carrito</a></li>
+                        <li><a class="navegacion" href="/pages/contacto.html">Contacto</a></li>
+                        <li><a class="navegacion" href="#nosotros">Nosotros</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
-    <nav>navigation
-        <ul id="navegacion">
-            <li><a id="navegacion" href="/pages/pageII.html">page II</a></li>
-            <li><a id="navegacion" href="/pages/pageIII.html">page III</a></li>
-            <li><a id="navegacion" href="./index.html">Inicio</a></li>
-            <li>Productos</li>
-            <li>Reseñas</li>
-            <li>Contacto</li>
-        </ul>
-    </nav>
-    <main>main
-        <h1>Este es el encabezado principal</h1>
-        <h2>Este es un subtítulo</h2>
+
+    <main>
+        <section class="heroSection heroImageIndex">
+            <div>
+                <h1>KAMBÁ Indumentaria</h1>
+                <h2 class="dottedFont">Colores que inspiran, talles que empoderan: moda moderna para mujeres reales.
+                </h2>
+                <a class="linkButton" href="./pages/galeria.html">Descubre nuestra colección</a>
+            </div>
+        </section>
+
         <section>
-            <img src="./assets/img/moonHd.jpeg" alt="luna llena">
-            <iframe width="290" height="250" src="https://maps.google.com/maps?width=290&amp;height=250&amp;hl=es&amp;q=Corrientes%2000St,%20Buenos%20Aires%20WC1E%207HU,%20Argentina&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/sport-gps/">gps watches</a>>El iframe no carga</iframe></section>
-        <h3>Este es otro subtítulo</h3>
+            <h3>Moda para mujeres auténticas: Diseños llenos de color, estilo y comodidad para mujeres que se destacan
+            </h3>
+            <p>
+                Ropa diseñada para mujeres seguras y auténticas. Cada prenda está <em>hecha a mano en nuestro
+                    taller</em>, donde la calidad artesanal se une al estilo moderno y vibrante. Porque creemos que la
+                moda no tiene edad ni talla, ofrecemos prendas que celebran <strong>tu belleza única</strong>.
+            </p>
+        </section>
 
-        <p>Este es un párrafo de introducción sobre el proyecto. Aquí podés usar <strong>negrita</strong>,
-            <em>cursiva</em>, y <s>tachado</s>.
-        </p>
+        <section>
+            <h2 class="textCenter">Para muestra basta un botón</h2>
+            <div class="carousel">
+                <img class="imgResize" src="./assets/img/ruana-01.jpg" alt="" loading="lazy">
+                <img class="imgResize" src="./assets/img/ruana-02.jpg" alt="" loading="lazy">
+                <img class="imgResize" src="./assets/img/ruana-03.jpg" alt="" loading="lazy">
+                <img class="imgResize" src="./assets/img/vestido01.jpg" alt="" loading="lazy">
+                <img class="imgResize" src="./assets/img/vestidos-01.jpg" alt="" loading="lazy">
+                <img class="imgResize" src="./assets/img/vestidos-02.jpg" alt="" loading="lazy">
+                <img class="imgResize" src="./assets/img/vestido04.jpg" alt="" loading="lazy">
 
+            </div>
+            <p>
+                Encuentra tu estilo: Desde diseños exclusivos hasta talles inclusivos, nuestras prendas están hechas
+                pensando en mujeres modernas que valoran la calidad, el estilo y la comodidad. Descubre una colección
+                llena de vida, color y confección artesanal.
+            </p>
+            <a class="linkButton colectionBtn" href="./pages/galeria.html">Ver la colección</a>
 
+            <!-- <img src="https://picsum.photos/350/463?random=1">
+            <img src="https://picsum.photos/350/463?random=2&blur=5">
+            <img src="https://picsum.photos/350/463?random=3&grayscale"> -->
+
+        </section>
+        <div class="spacer"></div>
+        <section>
+            <h2>Ofertas y promociones</h2>
+            <p>
+                ¡Es momento de renovar tu guardarropa con estilo! Descubre nuestras ofertas especiales y disfruta de
+                descuentos increíbles en diseños únicos y modernos. Ya sea que busques un look casual o algo más
+                elegante, ahora es el mejor momento para hacerlo a un precio irresistible. No te pierdas nuestras
+                promociones por tiempo limitado: porque sentirte fabulosa no tiene que costar de más. ¡Compra ahora y
+                luce tu mejor versión sin salirte del presupuesto!
+            </p>
+            <p>
+                Envío gratis en todas las compras mayores a $50.000 - Viste tu mejor versión sin salir de casa.
+            </p>
+        </section>
+        <section>
+            <h2>Lo que dicen nuestras clientas</h2>
+            <p>
+                "Me encanta cómo cada prenda se adapta perfectamente a mi estilo y a mi cuerpo. Me siento única y cómoda
+                con estos diseños." - <em>Laura</em>
+            </p>
+            <p>
+                "Finalmente encontré una tienda donde me siento vista. Moda para todas, sin importar la talla." -
+                <em>Martha</em>
+            </p>
+        </section>
+        <section>
+            <h2 id="nosotros">Acerca de nosotros</h2>
+            <p>En <strong>Kambá</strong>, cada prenda cuenta una historia de dedicación, creatividad y pasión. Nuestro
+                proyecto nació en el taller de Liliana, donde con manos expertas y un corazón lleno de ideas, se diseña,
+                corta, cose y estampa cada pieza de manera artesanal.
+
+                Con el paso de los años, Liliana ha perfeccionado su técnica, desarrollando diseños únicos que celebran
+                la esencia de las mujeres modernas, especialmente aquellas que buscan prendas llenas de color, estilo y
+                autenticidad. Nos enorgullece ofrecer ropa que no solo sigue las tendencias, sino que también refleja la
+                personalidad y la confianza de mujeres, en todas las tallas.
+
+                Cada detalle está pensado para que te sientas cómoda, segura y auténtica, porque creemos que la moda es
+                una forma de expresión que no tiene edad ni límites. Bienvenida a un espacio donde la calidad artesanal
+                y el diseño moderno se unen para ofrecerte algo más que ropa: te ofrecemos una experiencia única.</p>
+        </section>
+        <!-- <section>
+            <h2>section</h2>
+            <p></p>
+        </section>-->
+        
+        <div class="upDiv">
+            <a class="navegacion" href="#">
+                <img src="./assets/img/arrow_upward-24.svg" alt="flecha arriba">
+            </a>
+        </div>
     </main>
-    <footer>
-        <p>Este es el pie de página con la información de <a href="mailto:contactardiegob@gmail.com">contacto</a>.</p>
-        <p class="text-center fs-6 font-monospace">Footer Diego 2024</p>
 
+    <footer>
+        <div class="container">
+            <address>
+
+                <p>Mail de <a style="color: #f7f7f7;" href="mailto:contactardiegob@gmail.com">contacto</a></p>
+                <p><span class="negrita">Dirección:</span> Calle 1234, CABA, Buenos Aires, Argentina</p>
+                <p><span class="negrita">Teléfono:</span> +54 9 11 5454 8181</p>
+            </address>
+
+            <div>
+                <!-- <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a> -->
+                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                <lord-icon src="https://cdn.lordicon.com/eirvwukg.json" trigger="hover" state="hover-roll"
+                    style="width:3rem;height:3rem">
+                </lord-icon>
+            </div>
+            <div>
+                <nav>
+                    <ul class="navegacion">
+                        <li><a class="navegacion" href="/pages/galeria.html">Galeria</a></li>
+                        <li><a class="navegacion" href="./index.html">Carrito</a></li>
+                        <li><a class="navegacion" href="/pages/contacto.html">Contacto</a></li>
+                        <li><a class="navegacion" href="./index.html#nosotros">Nosotros</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <p class="textCenter fs-6 font-monospace">Footer Diego 2024</p>
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

@@ -1,79 +1,263 @@
-body {
-    margin: 1rem;
-    padding-left: 1em;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", system-ui;
 }
 
-header {
+/*:root {
+    font-size: 16px;
+}*/
+body{
+    margin: 1rem 2rem;
+}
+
+
+.dottedFont {
+    font-family: "Edu AU VIC WA NT Dots", cursive;
+    /*    font-size: 3rem;
+    font-style: normal;
+    font-weight: 500;*/
+    color: #f7f7f7;
+    font-optical-sizing: auto;
+}
+
+header,
+footer {
+    background-color: #6E6A6F;
     background-color: #6C698D;
-    padding: 0.5em;
+    padding: 0.1em;
+    color: #f7f7f7;
+}
+footer{
+    margin-top: -1rem;
+}
+
+.hero {
+    h1 {
+        font-size: 4rem;
+        color: #f7f7f7;
+        font-weight: 700;
+        letter-spacing: 0.3rem;
+        display: inline;
+    }
+
+}
+
+.heroImageIndex {
+    background-image: url("../assets/img/fondoHero.jpg");
+    height: 80vh;
+    background-size: cover;
 }
 
 nav {
-    background-color: #D4D2D5;
+    /*background-color: #D4D2D5;*/
+    color: #f7f7f7;
 }
 
-h1 {
+/*h1 {
     color: #f7f7f7;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
     display: inline;
-}
+}*/
 
 main {
     background-color: #BFAFA6;
 }
 
-article {
-    background-color: rgba(255, 115, 0, 0.685);
-}
-
 section {
-    background-color: #AA968A;
-}
-
-aside {
-    background-color: greenyellow;
-}
-
-footer {
-    background-color: #6E6A6F;
-    color: #f7f7f7;
+    /*    background-color: #AA968A;*/
+    background-color: #BFAFA6;
+    h3 {
+        text-align: justify;
+        padding: 1rem;
+    }
+    p {
+        font-size: 1.3rem;
+        text-align: justify;
+        padding: 1rem;
+    }
 }
 
 img {
-    /*degradado en imagenes*/
-    height: 25%;
-    width: 25%;
     mask-image: linear-gradient(black 80%,
             transparent);
-}
 
-img2 {
-    /*esto evita saltos en el sitio cuando cargan imagenes o videos en una pagina*/
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16/9;
-}
-
-table {
-    border: 3px solid green;
-}
-
-.celdas {
-    border: 2px solid rebeccapurple;
 }
 
 .logo {
-    height: auto;
-    width: auto;
+    height: 5rem;
+    /*width: 5rem;*/
 }
 
-#navegacion {
+.navegacion {
     list-style: none;
-    text-decoration: none;
-    color: #615f5f;
+
+    li {
+        display: inline;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    /*color: #f7f7f7;*/
+    a {
+        text-decoration: none;
+        color: #f7f7f7;
+    }
+
+    /*    color: #615f5f;*/
+
 }
 
-.princess-sofia-regular {
-    font-family: "Princess Sofia", cursive;
-    font-weight: 400;
-    font-style: normal;
+.imgResize {
+    width: 30vw;
 }
+
+.negrita {
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.container {
+    display: flex;
+    max-width: 100%;
+    margin: 0%;
+    padding: 0%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    padding: 0%;
+}
+
+.backgroundGradient {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+.alignRight {
+    text-align: right;
+}
+
+.galleryHero {
+    background-image: url("../assets/img/4vestidos.jpg");
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/*
+h1 {
+        font-size: 4rem;
+        color: #f7f7f7;
+        font-weight: 700;
+        letter-spacing: 0.3rem;
+        display: inline;
+    }
+*/
+
+.textCenter {
+    text-align: center;
+}
+
+.heroSection {
+    div {
+        /*backdrop-filter: invert(80%);*/
+        /*backdrop-filter: sepia(90%);*/
+        backdrop-filter: blur(5px);
+        padding: 20px 0;
+    }
+    text-align: center;
+    h1 {
+        color: #f7f7f7;
+        font-size: 5rem;
+        font-weight: 700;
+        letter-spacing: 0.3em;
+    }
+    h1+h2 {
+        font-size: 2.5rem;
+        /*        color: #1e1f1d;*/
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        margin-bottom: 0.6em;
+    }
+}
+
+section > h2{
+    padding: 0.5em;
+}
+
+.linkButton {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #f7f7f7;
+    background-color: #909890e0;
+    border: 2px solid black;
+    /*margin: 0.5em;*/
+    padding: 7px;
+    border-radius: 7px;
+    box-shadow: 10px 14px 4px -1px rgba(14, 14, 14, 0.7);
+}
+
+a:hover{
+    color: #cbcbd9;
+}
+
+.carousel {
+    display: flex;
+    width: 75%;
+    height: 430px;
+    margin: auto;
+
+    img {
+        width: 0;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        transition: .5s ease;
+    }
+}
+
+.carousel img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.spacer{
+    height: 1.5rem;
+    width: 100%;
+}
+
+.colectionBtn{
+    margin: auto;
+    /*margin-bottom: 2rem;*/
+    text-align: center;
+    display: block;
+    width: 25%;
+}
+
+.upDiv{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: #f7f7f7a8;
+    position: fixed;
+    right: 2rem;
+    bottom: 1.5rem;
+    text-align: center;
+}
+
+/*
+    4 vestidos palette
+#806A61
+#1C2623
+#DDDFCD
+#CDA598
+#B8B7BE
+    */
