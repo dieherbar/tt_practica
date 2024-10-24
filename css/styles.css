@@ -28,6 +28,7 @@ body{
 header,
 footer {
     background-color: #6E6A6F;
+    background-color: #6C698D;
     padding: 0.1em;
     color: #f7f7f7;
 }
@@ -230,12 +231,29 @@ a:hover{
     width: 100%;
 }
 
+.fixElement{
+    position: fixed;
+    right: 2rem;
+    bottom: 1.5rem;
+}
+
 .colectionBtn{
     margin: auto;
     /*margin-bottom: 2rem;*/
     text-align: center;
     display: block;
     width: 25%;
+}
+
+.upDiv{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: #f7f7f7a8;
+    position: fixed;
+    right: 2rem;
+    bottom: 1.5rem;
+    text-align: center;
 }
 
 /*
