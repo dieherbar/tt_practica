@@ -32,6 +32,9 @@ footer {
     padding: 0.1em;
     color: #f7f7f7;
 }
+footer{
+    margin-top: -1rem;
+}
 
 .hero {
     h1 {
@@ -88,7 +91,7 @@ img {
 
 .logo {
     height: 5rem;
-    width: 5rem;
+    /*width: 5rem;*/
 }
 
 .navegacion {
@@ -229,12 +232,6 @@ a:hover{
 .spacer{
     height: 1.5rem;
     width: 100%;
-}
-
-.fixElement{
-    position: fixed;
-    right: 2rem;
-    bottom: 1.5rem;
 }
 
 .colectionBtn{
