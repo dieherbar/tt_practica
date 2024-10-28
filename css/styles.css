@@ -33,7 +33,7 @@ footer {
     color: #f7f7f7;
 }
 footer{
-    margin-top: -1rem;
+    margin-top: -0.1rem;
 }
 
 .hero {
@@ -252,6 +252,43 @@ a:hover{
     bottom: 1.5rem;
     text-align: center;
 }
+.galeriaProductos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+.producto{
+    margin-bottom: 1rem;
+}
+.imgDiv{
+    border: 2px solid #AA968A;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    width: 280px;
+    height: 710px;
+    padding: 3px;
+   
+    img{
+        width: 100%;
+        height: 90%;
+        object-fit: cover;
+        border-top-left-radius: 9px;
+        border-top-right-radius: 9px;
+    }
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
 
 /*
     4 vestidos palette
