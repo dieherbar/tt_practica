@@ -45,23 +45,25 @@
             </p>
         </section>
 
-        <section>
+        <section >
             <!-- modify this form HTML and place wherever you want your form -->
-            <form action="https://formspree.io/f/xpwagzjg" method="POST">
-                <label>
+            <form class="formulario" action="https://formspree.io/f/xpwagzjg" method="POST">
+                <label for="email">
                     Tu email:
                     <input type="email" name="email" required>
                 </label>
                 <label for="name">Tu Nombre
-                    <input type="text">
+                    <input type="text" name="name">
                 </label>
-                <label>
+                <label for="message">
                     Envianos tu consulta:
                     <textarea name="message" required></textarea>
                 </label>
                 <!-- your other form fields go here -->
-                <button class="linkButton" type="submit">Enviar</button>
-                <button class="linkButton" type="reset">Borrar formulario</button>
+                 <div class="buttons">
+                     <button class="linkButton " type="submit">Enviar</button>
+                     <button class="linkButton " type="reset">Borrar formulario</button>
+                    </div>
             </form>
         </section>
 
