@@ -317,7 +317,14 @@ a:hover{
     display: flex;
     gap: 1rem;
   }
-  
+
+  .indexNosotros{
+    display: flex;
+    padding: 0 0.5rem;
+    p{
+        line-height: 2;
+    }
+  }
 
 /*
     4 vestidos palette
