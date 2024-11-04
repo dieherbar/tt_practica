@@ -345,6 +345,24 @@ a:hover{
   }
 /*****************/
 
+.reviews{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    /* grid-template-rows: auto 1fr auto; */
+    gap: 0.5rem; 
+    padding: 0.5rem;
+    
+}
+.card{
+    border: 1px solid black;
+    background-color: #BFAFA6;
+    :hover{
+        background-color: #b29d90e7;
+        transform: translate(-5px);
+    }
+}
+
 @media screen and (max-width: 600px){
     .heroSection{
         h1{
