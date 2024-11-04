@@ -326,6 +326,49 @@ a:hover{
     }
   }
 
+  /**navegación animada MiduDev*/
+  .fancyHeader{
+    backdrop-filter: blur(15px);
+    position: sticky;
+    top: 0px;
+    animation: adjust-header linear both;
+    animation-timeline: scroll();
+    animation-range: 0 200px;
+    z-index: 999;
+  }
+  @keyframes adjust-header{
+    to{
+        background: rgb(108, 105, 141, .3);
+        font-size: 12px;
+        height: 80px;
+    }
+  }
+/*****************/
+
+@media screen and (max-width: 600px){
+    .heroSection{
+        h1{
+            font-size: 2rem;
+        }
+        h1 + h2{
+            font-size: 1.5rem;
+        }
+    }
+    section > h2{
+        text-align: center;
+    }
+    .indexNosotros{
+        display: flex;
+        flex-direction: column;
+        
+        img{
+            margin: 0 auto;
+            width: 75%;
+            height: 75%;
+        }
+    }
+}
+
 /*
     4 vestidos palette
 #806A61
