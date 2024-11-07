@@ -362,8 +362,11 @@ a:hover{
         transform: translate(-5px);
     }
 }
+address{
+    padding: 0.3rem;
+}
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 991.9px){
     .logo{
         height: 3rem;
     }
@@ -400,6 +403,25 @@ a:hover{
             line-height: 1.4;
         }
     }
+}
+@media screen and (max-width: 1399.9px){
+    h1{
+        font-size: 2rem;
+    }
+    h1 + h2{
+        font-size: 1.5rem;
+    }
+
+    .indexNosotros{
+        display: flex;
+        flex-direction: column;
+        
+        img{
+            margin: 0 auto;
+            width: 90%;
+            height: 50%;
+        }
+}
 }
 
 /*
