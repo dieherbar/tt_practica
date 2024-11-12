@@ -14,7 +14,10 @@
 body{
     margin: 1rem 2rem;
 }
-
+.texto{
+ width: 70%;
+margin: 0 auto;
+}
 
 .dottedFont {
     font-family: "Edu AU VIC WA NT Dots", cursive;
@@ -34,6 +37,9 @@ footer {
 }
 footer{
     margin-top: -0.1rem;
+    p{
+        text-align: center;
+    }
 }
 
 .hero {
@@ -164,6 +170,7 @@ h1 {
 */
 
 .textCenter {
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -344,7 +351,17 @@ a:hover{
     }
   }
 /*****************/
-
+.vestidosLtd{
+    height: 70vh;
+}
+.txtDestacado{
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 100%;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #6C698D;
+}
 .reviews{
     width: 100%;
     display: grid;
@@ -356,14 +373,29 @@ a:hover{
 .card{
     border: 1px solid black;
     box-shadow: 5px 7px 7px 0px #14121280;
-    background-color: #BFAFA6;
+    /*background-color: #BFAFA6;*/
+    background: radial-gradient(circle farthest-corner at center center, #bfafa6 0%, #f0dcd0f6 80%);
     :hover{
-        background-color: #b29d90e7;
-        transform: translate(-5px);
+        height: 100%;
+        background: radial-gradient(circle farthest-corner at center center, #c2bdba 0%, #bfafa6 80%);
     }
 }
 address{
     padding: 0.3rem;
+}
+.contactTitle{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.formulario{
+    margin: 0 auto;
+}
+.mapa{
+    width: 90%;
+    margin: 0 auto;
+    iframe{
+        width: 80vw;
+    }
 }
 
 @media screen and (max-width: 991.9px){
@@ -384,6 +416,10 @@ address{
             font-size: 1.5rem;
         }
     }
+    .texto{
+        width: 90%;
+       margin: 0 auto;
+       }
     section > h2{
         text-align: center;
     }
