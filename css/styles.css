@@ -459,6 +459,13 @@ address{
         }
 }
 }
+@media screen and (min-width: 1440px) {
+    .galeriaProductos{
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+}
 
 /*
     4 vestidos palette
