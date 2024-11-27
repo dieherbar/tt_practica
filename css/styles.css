@@ -466,7 +466,9 @@ address{
     }
     
 }
-
+.bg-custom-color{
+    background-color: #6C698D;
+}
 /*
     4 vestidos palette
 #806A61
