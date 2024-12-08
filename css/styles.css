@@ -469,6 +469,15 @@ address{
 .bg-custom-color{
     background-color: #6C698D;
 }
+
+#mensaje{
+    margin: 1em 0;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color:red;
+    text-shadow: #f8f7f2 5px 3px 3px;
+}
 /*
     4 vestidos palette
 #806A61
