@@ -94,6 +94,7 @@ section {
     /*    background-color: #AA968A;*/
     background-color: #BFAFA6;
 
+
     h3 {
         text-align: justify;
         padding: 1rem;
@@ -156,6 +157,10 @@ img {
 
 .item {
     padding: 0%;
+    .a{
+        text-decoration: none;
+        color: #f7f7f7;
+    }
 }
 
 .backgroundGradient {
@@ -259,6 +264,7 @@ a:hover {
 .spacer {
     height: 1.5rem;
     width: 100%;
+    background-color: #BFAFA6;
 }
 
 .colectionBtn {
@@ -328,13 +334,13 @@ a:hover {
 .cartButton {
     text-decoration: none;
     font-size: 1rem;
-    color: #b0b0b0;
+    color: #f7f7f7;
     background-color: #b6c1b6e0;
     border: 2px solid #b6c1b6;
     /*margin: 0.5em;*/
     padding: 5px;
     border-radius: 7px;
-    /* box-shadow: 10px 14px 4px -1px rgba(14, 14, 14, 0.7); */
+    box-shadow: 3px 7px 4px 1px rgba(14, 14, 14, 0.7);
 }
 
 .formulario {
@@ -399,8 +405,19 @@ a:hover {
 
 }
 
-.card {
+.cardReview {
     border: 1px solid black;
+    box-shadow: 5px 7px 7px 0px #14121280;
+    /*background-color: #BFAFA6;*/
+    background: radial-gradient(circle farthest-corner at center center, #bfafa6 0%, #f0dcd0f6 80%);
+    /*:hover{
+        height: 100%;
+        background: radial-gradient(circle farthest-corner at center center, #c2bdba 0%, #bfafa6 80%);
+    }*/
+
+}.cardVestido {
+    /*border: 1px solid black;*/
+    border-radius: 7px;
     box-shadow: 5px 7px 7px 0px #14121280;
     /*background-color: #BFAFA6;*/
     background: radial-gradient(circle farthest-corner at center center, #bfafa6 0%, #f0dcd0f6 80%);
@@ -528,7 +545,7 @@ address {
     }
 }
 
-#mensaje {
+#mensajeEmail, #mensajeNombre, #mensajeTexto {
     margin: 1em 0;
     padding: 0.3rem;
     /*font-size: 1.4rem;*/
@@ -536,7 +553,14 @@ address {
     color: red;
     text-shadow: #f8f7f2 5px 3px 3px;
 }
-
+.cincuenta{
+    height: 50vh;
+    justify-content: center;
+}
+.sesenta{
+    height: 60vh;
+    justify-content: center;
+}
 /*
     4 vestidos palette
 #806A61
