@@ -33,10 +33,11 @@ const renderizarCarrito = () => {
 
 //funcion para vaciar el carrito
 function vaciarCarrito() {
-    carrito.length = 0; // Clear the carrito array
     localStorage.removeItem('carrito');
-    calcularTotal();
+    carrito.length = 0; // Clear the carrito array
     renderizarCarrito();
+    calcularTotal();
+    console.log("Productos en el carrito:", carrito);
 }
 
 // Función para eliminar un producto del carrito
@@ -75,4 +76,4 @@ document.addEventListener("DOMContentLoaded", () => {
     calcularTotal();
 });
 
-const galeria = () => {window.location.href = "galeria.html";};
+const galeria = () => { window.location.href = "galeria.html"; };
