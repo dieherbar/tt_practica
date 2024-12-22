@@ -108,19 +108,21 @@
         <!--adding new section to add bootstrap form-->
         <section class="">
             <div class="w-50 formulario">
-                <form action="https://formspree.io/f/xpwagzjg" method="POST">
+                <form id="xpwagzjg" action="https://formspree.io/f/xpwagzjg" method="POST">
 
                     <div class="mb-3">
                         <label for="mail" class="form-label">Tu correo electrónico</label>
                         <input onclick="borrarMensaje()" type="email" class="form-control" id="mail"
                             placeholder="nombre@example.com">
-                        <small id="mensaje"></small><br>
+                        <small id="mensajeEmail"></small><br>
                         <label for="nombre" class="form-label">Tu nombre:</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Maria Gonzalez">
+                        <input onclick="borrarMensajeNombre()" type="text" class="form-control" id="nombre" placeholder="Maria Gonzalez">
+                        <small id="mensajeNombre"></small><br>
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Tu mensaje va acá</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea onclick="borrarMensajeTexto()" class="form-control" id="formTextarea" rows="3"></textarea>
+                        <small id="mensajeTexto"></small><br>
                     </div>
                     <button type="submit" class="linkButton" id="enviar">Enviar</button>
                     <button type="reset" class="linkButton ms-3">Limpiar formulario</button>
