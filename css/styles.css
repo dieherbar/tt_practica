@@ -259,6 +259,7 @@ a:hover {
 .spacer {
     height: 1.5rem;
     width: 100%;
+    background-color: #BFAFA6;
 }
 
 .colectionBtn {
@@ -536,7 +537,14 @@ address {
     color: red;
     text-shadow: #f8f7f2 5px 3px 3px;
 }
-
+.cincuenta{
+    height: 50vh;
+    justify-content: center;
+}
+.sesenta{
+    height: 60vh;
+    justify-content: center;
+}
 /*
     4 vestidos palette
 #806A61
