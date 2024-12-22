@@ -74,3 +74,5 @@ document.addEventListener("DOMContentLoaded", () => {
     renderizarCarrito();
     calcularTotal();
 });
+
+const galeria = () => {window.location.href = "galeria.html";};
